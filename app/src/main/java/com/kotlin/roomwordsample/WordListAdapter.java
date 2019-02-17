@@ -31,7 +31,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordVi
             Word current = mWords.get(i);
             wordViewHolder.wordItemView.setText(current.getWord());
         } else {
-            wordViewHolder.wordItemView.setText("No word");
+            wordViewHolder.wordItemView.setText(R.string.str_no_word);
         }
     }
 

@@ -10,7 +10,7 @@ import java.util.List;
 
 @Dao
 public interface WordDao {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert
     void insert(Word word);
 
     @Query("DELETE FROM word_table")
